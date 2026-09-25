@@ -1,0 +1,96 @@
+/* Reset CSS cơ bản */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+/* 1. Header */
+.header {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+/* 2. Navigation sử dụng Flexbox dàn hàng ngang */
+.nav {
+  display: flex;
+  background-color: #34495e;
+}
+
+.nav a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.nav a:hover {
+  background-color: #1abc9c;
+}
+
+/* Khung thân ghép Main Content và Sidebar trên cùng 1 hàng */
+.main-wrapper {
+  display: flex;
+  min-height: 300px;
+}
+
+/* 3. Main Content (Chiếm 70% chiều rộng) */
+.content {
+  flex: 7;
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+/* 4. Sidebar (Chiếm 30% chiều rộng) */
+.sidebar {
+  flex: 3;
+  background-color: #ecf0f1;
+  padding: 20px;
+  border-left: 1px solid #ddd;
+}
+
+/* 5. Footer */
+.footer {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* RESPONSIVE CHO MOBILE (Màn hình nhỏ hơn 768px) */
+@media screen and (max-width: 768px) {
+  /* Chuyển Nav menu thành dạng cột dọc */
+  .nav {
+    flex-direction: column;
+  }
+
+  .nav a {
+    border-bottom: 1px solid #455a64;
+  }
+
+  /* Chuyển Main Content & Sidebar xếp chồng theo chiều dọc */
+  .main-wrapper {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    border-left: none;
+    border-top: 1px solid #ddd;
+  }
+}

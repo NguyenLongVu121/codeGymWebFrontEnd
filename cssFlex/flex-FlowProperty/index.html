@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thực hành CSS flex-flow Property</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>
+      1. `flex-flow: row nowrap` (Sắp xếp theo hàng ngang, không ngắt dòng)
+    </h2>
+    <div class="flex-container flow-row-nowrap">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+      <div class="item">Item 4</div>
+    </div>
+
+    <h2>
+      2. `flex-flow: row-reverse nowrap` (Đảo ngược hàng ngang, không ngắt dòng)
+    </h2>
+    <div class="flex-container flow-row-reverse-nowrap">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+      <div class="item">Item 4</div>
+    </div>
+
+    <h2>
+      3. `flex-flow: column wrap` (Sắp xếp theo cột dọc, cho phép xuống
+      dòng/cột)
+    </h2>
+    <div class="flex-container flow-column-wrap">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+      <div class="item">Item 4</div>
+    </div>
+  </body>
+</html>

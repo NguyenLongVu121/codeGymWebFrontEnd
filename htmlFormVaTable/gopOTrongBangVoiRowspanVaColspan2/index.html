@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <title>Lịch họp công ty</title>
+  </head>
+  <body>
+    <!-- Tiêu đề <h1> đúng yêu cầu đề bài -->
+    <h1>Lịch họp công ty</h1>
+
+    <!-- Bảng hiển thị lịch họp -->
+    <table border="1">
+      <!-- Hàng tiêu đề của bảng -->
+      <tr>
+        <th>Ngày</th>
+        <th>Giờ</th>
+        <th>Nội dung cuộc họp</th>
+      </tr>
+
+      <!-- THỨ HAI: Có 2 cuộc họp -> Dùng rowspan="2" ở cột Ngày -->
+      <tr>
+        <td rowspan="2">Thứ Hai</td>
+        <td>08:00 - 09:00</td>
+        <td>Họp giao ban đầu tuần toàn công ty</td>
+      </tr>
+      <tr>
+        <!-- Hàng này không cần ô Ngày vì đã bị gộp từ hàng trên -->
+        <td>10:00 - 11:30</td>
+        <td>Họp phòng kỹ thuật review dự án</td>
+      </tr>
+
+      <!-- THỨ BA: Có 1 cuộc họp kéo dài cả buổi -> Dùng colspan="2" ở cột Giờ & Nội dung -->
+      <tr>
+        <td>Thứ Ba</td>
+        <td colspan="2">
+          Cả ngày: Đào tạo nội bộ cho nhân viên mới (08:00 - 17:00)
+        </td>
+      </tr>
+
+      <!-- THỨ TƯ: Có 2 cuộc họp -->
+      <tr>
+        <td rowspan="2">Thứ Tư</td>
+        <td>09:00 - 10:30</td>
+        <td>Họp với đối tác nước ngoài</td>
+      </tr>
+      <tr>
+        <td>14:00 - 15:30</td>
+        <td>Họp tổng kết quý phòng Marketing</td>
+      </tr>
+    </table>
+  </body>
+</html>

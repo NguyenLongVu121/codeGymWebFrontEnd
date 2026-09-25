@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+h2 {
+  margin: 20px 0 10px 0;
+  font-size: 18px;
+}
+
+/* Khung lưới chia làm 4 cột bằng nhau */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  background-color: #2196f3;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+/* Định dạng các ô con (Grid Items) */
+.item {
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid #333;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* THƯỜNG DÙNG 1: Bắt đầu từ đường kẻ cột chỉ định (column-line) */
+.item-start-2 {
+  grid-column-start: 2; /* Bắt đầu từ đường kẻ cột thứ 2 (đẩy Item 1 sang cột 2) */
+  background-color: #ffeb3b;
+}
+
+/* THƯỜNG DÙNG 2: Kéo dài ô qua nhiều cột (span n) */
+.item-span-2 {
+  grid-column-start: span 2; /* Ô này chiếm tổng cộng 2 cột chiều ngang */
+  background-color: #4caf50;
+  color: white;
+}

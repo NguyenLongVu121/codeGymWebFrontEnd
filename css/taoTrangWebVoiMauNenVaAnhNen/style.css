@@ -1,0 +1,54 @@
+/* 1. Thiết lập màu nền (background-color) cho toàn bộ trang web */
+body {
+  background-color: #eef2f5; /* Màu nền xám xanh nhạt */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 40px 20px;
+  text-align: center; /* Căn giữa tiêu đề h1 và đoạn văn p */
+}
+
+/* Định dạng tiêu đề và đoạn văn ngoài */
+h1 {
+  color: #1a2a3a;
+}
+
+p {
+  color: #4a5a6a;
+  font-size: 16px;
+}
+
+/* 2. Thêm ảnh nền (background-image) và căn giữa nội dung trong khối <div> */
+.important-box {
+  /* Đặt ảnh nền cho khối div */
+  background-image: url("bg-card.jpg");
+
+  /* Tùy chỉnh thuộc tính hiển thị ảnh nền chuẩn đẹp */
+  background-size: cover; /* Phủ kín toàn bộ diện tích khối div */
+  background-position: center; /* Căn giữa hình ảnh nền */
+  background-repeat: no-repeat; /* Không lặp lại hình ảnh */
+
+  /* Tạo lớp phủ màu tối nhẹ/màu chữ tương phản để dễ đọc chữ */
+  color: #ffffff;
+
+  /* Thiết lập kích thước và căn giữa khối div ra giữa màn hình */
+  width: 60%;
+  margin: 30px auto; /* Căn giữa khối div theo chiều ngang */
+  padding: 40px 20px; /* Khoảng đệm bên trong khối */
+
+  /* 3. Căn giữa nội dung bên trong khối <div> */
+  text-align: center;
+
+  /* Trang trí thêm hiệu ứng viền & bo góc */
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Đổi màu chữ riêng cho tiêu đề h2 bên trong khối div */
+.important-box h2 {
+  color: #ffffff;
+  margin-top: 0;
+}
+
+.important-box p {
+  color: #f0f0f0;
+}

@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+h2 {
+  margin: 20px 0 10px 0;
+  font-size: 18px;
+}
+
+/* Khung bọc Flexbox Container */
+.flex-container {
+  display: flex;
+  background-color: #2196f3;
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 500px; /* Cố định chiều rộng khung để ép các item phải ngắt dòng */
+}
+
+/* Định dạng các phần tử con (Flex Items) */
+.item {
+  background-color: #ffffff;
+  border: 1px solid #333;
+  width: 120px; /* Mỗi item cố định rộng 120px (5 item = 600px > 500px của khung) */
+  padding: 20px 0;
+  text-align: center;
+  font-weight: bold;
+  margin: 5px;
+}
+
+/* VÍ DỤ 1: nowrap (Không cho xuống dòng, các item tự co hẹp lại) */
+.flex-nowrap {
+  flex-wrap: nowrap; /* */
+}
+
+/* VÍ DỤ 2: wrap (Tự động chuyển các item thừa xuống dòng mới từ trên xuống) */
+.flex-wrap {
+  flex-wrap: wrap; /* */
+}
+
+/* VÍ DỤ 3: wrap-reverse (Chuyển xuống dòng nhưng dòng mới đẩy lên phía trên) */
+.flex-wrap-reverse {
+  flex-wrap: wrap-reverse; /* */
+}

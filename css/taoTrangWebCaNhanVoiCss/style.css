@@ -1,0 +1,59 @@
+/* Định dạng chung */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Định dạng tiêu đề header */
+header {
+  background-color: #4caf50;
+  color: white;
+  padding: 20px;
+  font-size: 24px;
+}
+
+/* Định dạng ảnh đại diện */
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Làm tròn hình ảnh */
+  border: 3px solid #4caf50;
+  margin: 20px;
+}
+
+/* Định dạng danh sách sở thích */
+ul {
+  list-style-type: square;
+  text-align: left;
+  display: inline-block; /* Căn giữa khối danh sách */
+  margin-top: 10px;
+}
+
+/* Định dạng bảng liên hệ */
+table {
+  margin: auto; /* Căn giữa bảng */
+  border-collapse: collapse;
+  width: 50%;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+th {
+  background-color: #4caf50;
+  color: white;
+}
+
+/* Định dạng chân trang footer */
+footer {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #ddd;
+}

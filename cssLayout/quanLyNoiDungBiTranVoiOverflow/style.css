@@ -1,0 +1,9 @@
+.overflow-box {
+  width: 300px; /* Chiều rộng cố định của khối */
+  height: 100px; /* Chiều cao cố định của khối */
+  background-color: lightgray; /* Màu nền xám nhạt */
+  padding: 10px; /* Khoảng đệm bên trong */
+  overflow: auto; /* Tự động hiển thị thanh cuộn khi nội dung tràn */
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}

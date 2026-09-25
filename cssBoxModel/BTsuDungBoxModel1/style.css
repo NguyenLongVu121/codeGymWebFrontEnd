@@ -1,0 +1,27 @@
+/* Định dạng chung cho tất cả các thẻ .card */
+.card {
+  width: 280px; /* Chiều rộng */
+  height: 150px; /* Chiều cao */
+  padding: 20px; /* Khoảng đệm bên trong */
+  border: 5px solid #3498db; /* Viền màu xanh dương 5px */
+  margin: 20px; /* Khoảng cách bên ngoài */
+  font-family: Arial, sans-serif;
+}
+
+/* Thẻ thứ nhất: Sử dụng content-box và màu nền xanh lá */
+.card:nth-child(1) {
+  box-sizing: content-box;
+  background-color: #2ecc71;
+}
+
+/* Thẻ thứ hai: Sử dụng border-box và màu nền vàng */
+.card:nth-child(2) {
+  box-sizing: border-box;
+  background-color: #f1c40f;
+}
+
+/* Thẻ thứ ba: Sử dụng border-box và màu nền đỏ */
+.card:nth-child(3) {
+  box-sizing: border-box;
+  background-color: #e74c3c;
+}

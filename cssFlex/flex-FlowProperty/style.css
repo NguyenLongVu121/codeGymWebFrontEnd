@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+h2 {
+  margin: 20px 0 10px 0;
+  font-size: 18px;
+}
+
+/* Khung bọc chung cho các Flex Container */
+.flex-container {
+  display: flex;
+  background-color: #2196f3;
+  padding: 10px;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+/* Định dạng các ô con Flex Item */
+.item {
+  background-color: #ffffff;
+  border: 1px solid #333;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  min-width: 100px;
+}
+
+/* VÍ DỤ 1: Sắp xếp hàng ngang (row), không bọc dòng (nowrap) */
+.flow-row-nowrap {
+  flex-flow: row nowrap; /* Cú pháp gộp của flex-direction: row và flex-wrap: nowrap */
+}
+
+/* VÍ DỤ 2: Sắp xếp đảo ngược hàng ngang (row-reverse), không bọc dòng (nowrap) */
+.flow-row-reverse-nowrap {
+  flex-flow: row-reverse nowrap; /* Cú pháp gộp của flex-direction: row-reverse và flex-wrap: nowrap */
+}
+
+/* VÍ DỤ 3: Sắp xếp cột dọc (column), cho phép bọc cột mới (wrap) */
+.flow-column-wrap {
+  height: 200px; /* Khai báo chiều cao để ép thuộc tính wrap theo cột hoạt động */
+  flex-flow: column wrap; /* Cú pháp gộp của flex-direction: column và flex-wrap: wrap */
+}

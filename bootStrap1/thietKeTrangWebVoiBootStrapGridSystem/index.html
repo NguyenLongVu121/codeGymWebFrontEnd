@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thiết kế Trang Web với Bootstrap Grid System</title>
+
+    <!-- Nhúng Bootstrap 5 CSS via CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <!-- 1. Header Section: Chứa tiêu đề trang web -->
+    <header class="bg-primary text-white text-center py-4">
+      <div class="container">
+        <h1 class="fw-bold">Trang Web Tin Tức & Sản Phẩm</h1>
+        <p class="mb-0">
+          Xây dựng giao diện Responsive với Bootstrap Grid System
+        </p>
+      </div>
+    </header>
+
+    <!-- 2. Navbar: Menu điều hướng có menu Dropdown (Sổ xuống) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">MyWebsite</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar"
+          aria-controls="mainNavbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Trang chủ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Giới thiệu</a>
+            </li>
+
+            <!-- Dropdown Menu theo yêu cầu bài tập -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="servicesDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dịch vụ
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                <li><a class="dropdown-item" href="#">Thiết kế Web</a></li>
+                <li><a class="dropdown-item" href="#">Lập trình Mobile</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Tư vấn giải pháp</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Liên hệ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- 3. Main Content & Sidebar: Áp dụng Bootstrap Grid System -->
+    <main class="container my-5">
+      <div class="row g-4">
+        <!-- Cột nội dung chính (Main Content): col-md-8 trên Desktop, col-12 trên Mobile -->
+        <section class="col-12 col-md-8">
+          <div class="p-4 border rounded bg-light">
+            <h2 class="text-primary mb-3">Bài viết nổi bật</h2>
+            <p class="lead">
+              Đây là phần nội dung chính của trang web, nơi hiển thị các bài
+              viết, tin tức hoặc thông tin sản phẩm chính.
+            </p>
+            <p>
+              Hệ thống Bootstrap Grid giúp phần nội dung này chiếm 8/12 cột màn
+              hình khi xem trên máy tính (`col-md-8`), và tự động giãn rộng ra
+              full 100% chiều ngang màn hình khi chuyển sang xem trên thiết bị
+              di động (`col-12`/`col-12`).
+            </p>
+
+            <div class="card mt-4">
+              <div class="card-body">
+                <h5 class="card-title">Khóa học Lập trình Web</h5>
+                <p class="card-text">
+                  Học HTML, CSS, JavaScript và Bootstrap từ cơ bản đến nâng cao
+                  để tự làm trang web Responsive.
+                </p>
+                <a href="#" class="btn btn-primary">Xem chi tiết</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Cột phụ (Sidebar): col-md-4 trên Desktop, nằm bên dưới trên Mobile -->
+        <aside class="col-12 col-md-4">
+          <div class="p-4 border rounded bg-white shadow-sm">
+            <h4 class="text-secondary mb-3">Thông tin phụ</h4>
+            <ul class="list-group list-group-flush mb-4">
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                Bài viết mới nhất
+                <span class="badge bg-primary rounded-pill">5</span>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                Chủ đề quan tâm
+                <span class="badge bg-primary rounded-pill">12</span>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center"
+              >
+                Thông báo
+                <span class="badge bg-danger rounded-pill">3</span>
+              </li>
+            </ul>
+
+            <div class="alert alert-info mb-0">
+              <strong>Quảng cáo / Lượt xem:</strong> Sidebar tự động di chuyển
+              xuống dưới phần Main Content trên giao diện điện thoại màn hình
+              nhỏ.
+            </div>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <!-- 4. Footer: Chứa thông tin bản quyền -->
+    <footer class="bg-dark text-white text-center py-3 mt-auto">
+      <div class="container">
+        <p class="mb-0">&copy; 2026 MyWebsite. Tất cả quyền được bảo lưu.</p>
+      </div>
+    </footer>
+
+    <!-- Nhúng Bootstrap JS bundle qua CDN (Bắt buộc để Dropdown & Menu Mobile hoạt động) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

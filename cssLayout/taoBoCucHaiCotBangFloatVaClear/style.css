@@ -1,0 +1,34 @@
+/* Áp dụng box-sizing để padding không làm tăng tổng kích thước khối */
+* {
+  box-sizing: border-box;
+}
+
+/* Khối bao bọc toàn bộ bố cục */
+.container {
+  width: 100%;
+  overflow: hidden; /* Cung cấp cơ chế clearfix đơn giản cho khối cha */
+  font-family: Arial, sans-serif;
+}
+
+/* Cột bên trái (60%) */
+.left-column {
+  width: 60%;
+  float: left; /* Đẩy khối dạt về bên trái */
+  background-color: lightblue; /* Màu nền xanh nhạt */
+  padding: 20px;
+}
+
+/* Cột bên phải (38%) */
+.right-column {
+  width: 38%;
+  float: right; /* Đẩy khối dạt về bên phải */
+  background-color: lightgreen; /* Màu nền xanh lá nhạt */
+  padding: 20px;
+}
+
+/* Kỹ thuật Clearfix chuẩn bằng Pseudo-element ::after */
+.container::after {
+  content: "";
+  display: block;
+  clear: both; /* Xóa hiệu ứng float để tránh vỡ khung phía dưới */
+}

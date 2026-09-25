@@ -1,0 +1,65 @@
+/* 1. Element Selector (Bộ chọn thẻ): Đổi màu nền toàn trang */
+body {
+  background-color: #f4f7f6;
+  font-family: Arial, sans-serif;
+  padding: 30px;
+}
+
+/* 2. ID Selector (Bộ chọn ID): Căn giữa và định dạng tiêu đề h1 */
+#main-title {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+/* 3. Class Selector (Bộ chọn lớp): Định dạng đoạn văn mô tả */
+.description {
+  text-align: center;
+  color: #555555;
+  font-size: 18px;
+}
+
+/* 4. Grouping Selector (Nhóm các bộ chọn): Định dạng chung cho danh sách và nút */
+.hobby-list,
+.btn-submit {
+  margin-top: 25px;
+}
+
+/* Định dạng danh sách sở thích với các màu sắc khác nhau */
+.hobby-list {
+  list-style-type: square;
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hobby-item.item-1 {
+  color: #e74c3c; /* Màu đỏ */
+}
+
+.hobby-item.item-2 {
+  color: #2ecc71; /* Màu xanh lá */
+}
+
+.hobby-item.item-3 {
+  color: #3498db; /* Màu xanh dương */
+}
+
+/* 5. Element & Class Selector cho nút bấm */
+button.btn-submit {
+  display: block;
+  margin: 20px auto;
+  padding: 12px 24px;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* 6. Pseudo-class Selector (:hover): Hiệu ứng rê chuột cho nút bấm */
+button.btn-submit:hover {
+  background-color: #45a049; /* Đổi sang màu xanh đậm hơn khi di chuột vào */
+}

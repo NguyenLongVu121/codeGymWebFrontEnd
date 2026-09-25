@@ -1,0 +1,93 @@
+// Khung chứa tổng
+.gridcontainer-wrapper {
+  position: relative;
+  margin-top: 20px;
+}
+
+.gridcontainer {
+  width: 100%;
+  position: relative;
+
+  &.transparent-grid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.1;
+    height: 370px;
+    pointer-events: none; // Tránh cản trở tương tác
+
+    .gridcontent {
+      background-color: $white-bg;
+      border-right: 1px solid #000;
+      border-left: 1px solid #000;
+    }
+  }
+}
+
+.gridwrapper {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+
+  &.header-wrapper {
+    height: $grid-height-sm;
+  }
+
+  &.main-wrapper {
+    height: $grid-height-md;
+  }
+
+  &.footer-wrapper {
+    height: $grid-height-xs;
+  }
+}
+
+.gridcontent {
+  width: 8.333%;
+  box-sizing: border-box;
+  border-right: 1px solid $border-color;
+  height: 100%;
+  float: left;
+  background-color: $secondary-bg;
+
+  &.header-content {
+    width: 100%;
+    background: $accent-bg;
+    border-right-color: transparent;
+  }
+
+  &.footer-content {
+    width: 100%;
+    background: #0099cc;
+    border-right-color: transparent;
+  }
+
+  &.sidebar {
+    background-color: $white-bg;
+    border: none;
+    width: 25%;
+    padding-top: 15px;
+
+    .sub-block {
+      background-color: $card-bg;
+      border: none;
+      width: 100%;
+      height: 15%;
+      margin-bottom: 10px;
+    }
+  }
+
+  &.sidebar-right {
+    background-color: $white-bg;
+    border: none;
+    width: 25%;
+    padding-top: 15px;
+
+    .sub-block-tall {
+      background-color: $card-bg;
+      border: none;
+      width: 100%;
+      height: 92%;
+    }
+  }
+}

@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang Đăng Ký Tài Khoản</title>
+
+    <!-- Nhúng Bootstrap 5 CSS via CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body class="bg-light py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <!-- Cột chứa Form: Giới hạn độ rộng đẹp mắt trên Desktop và tự căn chỉnh trên Mobile -->
+        <div class="col-12 col-md-8 col-lg-6">
+          <div class="card shadow-sm p-4 rounded-3 bg-white">
+            <!-- Tiêu đề & Mô tả Form (Định dạng Bootstrap Text) -->
+            <h2 class="text-center text-primary mb-2">Đăng Ký Tài Khoản</h2>
+            <p class="text-center text-muted mb-4">
+              Vui lòng điền đầy đủ thông tin để tạo tài khoản mới
+            </p>
+
+            <form>
+              <!-- 1. Họ và tên (Input text) -->
+              <div class="mb-3">
+                <label for="fullName" class="form-label fw-bold"
+                  >Họ và tên</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="fullName"
+                  placeholder="Nguyễn Văn A"
+                  required
+                />
+              </div>
+
+              <!-- 2. Email (Input email) -->
+              <div class="mb-3">
+                <label for="email" class="form-label fw-bold"
+                  >Địa chỉ Email</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="name@example.com"
+                  required
+                />
+                <div class="form-text text-muted">
+                  Chúng tôi cam kết bảo mật email của bạn.
+                </div>
+              </div>
+
+              <!-- 3. Mật khẩu & 4. Xác nhận mật khẩu (Grid 2 cột) -->
+              <div class="row mb-3">
+                <div class="col-md-6 mb-3 mb-md-0">
+                  <label for="password" class="form-label fw-bold"
+                    >Mật khẩu</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="password"
+                    placeholder="••••••••"
+                    required
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="confirmPassword" class="form-label fw-bold"
+                    >Xác nhận mật khẩu</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="confirmPassword"
+                    placeholder="••••••••"
+                    required
+                  />
+                </div>
+              </div>
+
+              <!-- 5. Giới tính (Radio button) -->
+              <div class="mb-3">
+                <label class="form-label fw-bold d-block">Giới tính</label>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="genderRadio"
+                    id="genderMale"
+                    value="male"
+                    checked
+                  />
+                  <label class="form-check-label" for="genderMale">Nam</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="genderRadio"
+                    id="genderFemale"
+                    value="female"
+                  />
+                  <label class="form-check-label" for="genderFemale">Nữ</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="genderRadio"
+                    id="genderOther"
+                    value="other"
+                  />
+                  <label class="form-check-label" for="genderOther">Khác</label>
+                </div>
+              </div>
+
+              <!-- 6. Sở thích (Checkbox) -->
+              <div class="mb-3">
+                <label class="form-label fw-bold d-block">Sở thích</label>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="hobbyCode"
+                    value="coding"
+                  />
+                  <label class="form-check-label" for="hobbyCode"
+                    >Lập trình</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="hobbyMusic"
+                    value="music"
+                  />
+                  <label class="form-check-label" for="hobbyMusic"
+                    >Âm nhạc</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="hobbySports"
+                    value="sports"
+                  />
+                  <label class="form-check-label" for="hobbySports"
+                    >Thể thao</label
+                  >
+                </div>
+              </div>
+
+              <!-- 7. Quốc gia (Dropdown Select) -->
+              <div class="mb-4">
+                <label for="countrySelect" class="form-label fw-bold"
+                  >Quốc gia</label
+                >
+                <select class="form-select" id="countrySelect" required>
+                  <option value="" selected disabled>
+                    -- Chọn quốc gia --
+                  </option>
+                  <option value="vn">Việt Nam</option>
+                  <option value="us">Mỹ (USA)</option>
+                  <option value="jp">Nhật Bản</option>
+                  <option value="kr">Hàn Quốc</option>
+                </select>
+              </div>
+
+              <!-- 8. Nút Submit (Bootstrap Buttons) -->
+              <div class="d-grid">
+                <button type="submit" class="btn btn-primary btn-lg fw-bold">
+                  Đăng Ký
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

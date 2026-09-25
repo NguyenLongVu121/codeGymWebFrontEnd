@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      /* 1. Định dạng cho thẻ div cha (khối ngoài) */
+      div {
+        margin: auto; /* Căn giữa khối ra giữa màn hình */
+        padding: 35px; /* Khoảng đệm xung quanh */
+        width: 80px; /* Chiều rộng của khối */
+        box-shadow: inset 0 0 22px indianred; /* Tạo hiệu ứng bóng đổ bên trong màu indianred */
+        border-radius: 50%; /* Bo tròn khối div thành hình tròn */
+      }
+
+      /* 2. Định dạng riêng cho thẻ div con trực tiếp nằm bên trong (div > div) */
+      div > div {
+        padding: 0px 100px 0px; /* Khoảng đệm: trên 0px, trái/phải 100px, dưới 0px */
+        border-radius: 3%; /* Bo tròn nhẹ góc của khối con */
+        box-shadow: inset 0 0 22px seagreen; /* Tạo hiệu ứng bóng đổ bên trong màu seagreen */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Khối div cha -->
+    <div>
+      <!-- Khối div con lồng bên trong -->
+      <div></div>
+    </div>
+  </body>
+</html>

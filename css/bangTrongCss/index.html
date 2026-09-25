@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Thực hành Bảng trong CSS</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+
+      /* 1. Đường viền & Nhập viền (border-collapse) */
+      table {
+        width: 100%; /* Chiều rộng bảng 100% */
+        border-collapse: collapse; /* Gộp các đường viền kép thành 1 đường đơn */
+      }
+
+      /* 2. Đường viền cho ô & Padding */
+      table,
+      th,
+      td {
+        border: 1px solid #cccccc; /* Định dạng đường viền màu xám nhạt */
+      }
+
+      th,
+      td {
+        padding: 12px; /* Khoảng cách giữa đường viền và nội dung ô */
+      }
+
+      /* 3. Chiều cao tiêu đề & Màu sắc tiêu đề (th) */
+      th {
+        height: 50px; /* Chiều cao hàng tiêu đề */
+        background-color: #04aa6d; /* Màu nền xanh lá cho tiêu đề */
+        color: white; /* Màu chữ tiêu đề */
+        text-align: left; /* Căn chỉnh theo chiều ngang: căn trái */
+      }
+
+      /* 4. Căn chỉnh theo chiều dọc & ngang cho ô dữ liệu (td) */
+      td {
+        text-align: left; /* Căn trái ngang */
+        vertical-align: bottom; /* Căn lề dưới theo chiều dọc */
+        height: 40px;
+      }
+
+      /* 5. Tô màu luân phiên cho các hàng (Zebra Striping) */
+      tr:nth-child(even) {
+        background-color: #f2f2f2; /* Màu nền xám nhạt cho hàng chẵn */
+      }
+
+      /* Effet di chuột qua hàng (Hover effect) */
+      tr:hover {
+        background-color: #ddd;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Danh Sách Nhân Viên</h2>
+
+    <table>
+      <tr>
+        <th>Họ và Tên</th>
+        <th>Chức vụ</th>
+        <th>Phòng ban</th>
+      </tr>
+      <tr>
+        <td>Nguyễn Văn A</td>
+        <td>Lập trình viên Frontend</td>
+        <td>Phòng Công nghệ</td>
+      </tr>
+      <tr>
+        <td>Trần Thị B</td>
+        <td>Thiết kế UI/UX</td>
+        <td>Phòng Sáng tạo</td>
+      </tr>
+      <tr>
+        <td>Lê Văn C</td>
+        <td>Quản lý dự án</td>
+        <td>Phòng Điều hành</td>
+      </tr>
+      <tr>
+        <td>Phạm Thị D</td>
+        <td>Kiểm thử phần mềm</td>
+        <td>Phòng Công nghệ</td>
+      </tr>
+    </table>
+  </body>
+</html>

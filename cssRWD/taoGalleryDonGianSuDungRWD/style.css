@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 10px;
+}
+
+/* Định dạng thẻ khung chứa ảnh (Khung viền xám xung quanh) */
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+/* Định dạng hình ảnh tự co giãn theo độ rộng khung chứa */
+div.gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Đoạn mô tả bên dưới mỗi ảnh */
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+/* Mặc định trên màn hình lớn (> 700px): Hiển thị 4 ảnh trên 1 dòng */
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%; /* Mỗi ảnh chiếm 25% chiều rộng */
+}
+
+/* Xóa float sau khối gallery */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* YÊU CẦU 1 & 2: Màn hình nhỏ hơn 700px -> Hiển thị 2 ảnh trên 1 dòng */
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%; /* Mỗi ảnh chiếm 50% chiều rộng */
+    margin: 6px 0;
+  }
+}
+
+/* YÊU CẦU 3: Màn hình nhỏ hơn 500px -> Hiển thị 1 ảnh trên 1 dòng (xếp dọc 100%) */
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%; /* Mỗi ảnh chiếm 100% chiều rộng */
+  }
+}

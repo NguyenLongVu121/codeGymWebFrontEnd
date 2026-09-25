@@ -1,0 +1,63 @@
+/* Định dạng chung */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Thanh điều hướng */
+.sticky-menu {
+  position: sticky; /* Thiết lập chế độ dính khi cuộn */
+  top: 0; /* Dính vào mép trên cùng của màn hình */
+  background-color: #333; /* Màu nền xám đen */
+  color: white;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  z-index: 1000; /* Đảm bảo menu luôn nổi lên trên các thành phần khác */
+}
+
+.sticky-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Xếp các mục menu nằm ngang */
+  justify-content: center; /* Căn giữa các mục menu */
+}
+
+.sticky-menu ul li {
+  margin: 0 15px;
+}
+
+.sticky-menu ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px;
+  display: block;
+}
+
+/* Hiệu ứng rê chuột qua menu */
+.sticky-menu ul li a:hover {
+  background-color: #575757;
+  border-radius: 5px;
+}
+
+/* Nội dung trang web */
+section {
+  padding: 100px 20px;
+  height: 100vh; /* Mỗi section chiếm full 100% chiều cao màn hình để cuộn */
+}
+
+#home {
+  background-color: #f4f4f4;
+}
+#about {
+  background-color: #ddd;
+}
+#services {
+  background-color: #bbb;
+}
+#contact {
+  background-color: #999;
+}

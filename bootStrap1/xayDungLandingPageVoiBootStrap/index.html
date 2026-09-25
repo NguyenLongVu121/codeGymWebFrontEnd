@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Landing Page</title>
+
+    <!-- 1. Nhúng Bootstrap CSS qua CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <!-- 2. Bước 2.2: Tạo Navbar (Thanh điều hướng) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">MyBrand</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- 3. Bước 2.3: Thêm Hero Section (Khu vực giới thiệu nổi bật) -->
+    <header class="bg-primary text-white text-center py-5">
+      <div class="container">
+        <h1>Chào mừng đến với MyBrand</h1>
+        <p class="lead">Giải pháp số 1 cho doanh nghiệp của bạn</p>
+        <a href="#services" class="btn btn-light btn-lg mt-3">Khám phá ngay</a>
+      </div>
+    </header>
+
+    <!-- 4. Bước 2.4: Tạo Grid System - Services (Danh sách dịch vụ với Bootstrap Card) -->
+    <section id="services" class="container py-5">
+      <h2 class="text-center mb-4">Dịch vụ của chúng tôi</h2>
+
+      <div class="row g-4">
+        <!-- Cột Dịch vụ 1 (Chiếm 4/12 cột trên màn hình Medium) -->
+        <div class="col-md-4 text-center">
+          <div class="card p-4 h-100 shadow-sm">
+            <h3>Thiết kế Web</h3>
+            <p class="text-muted mt-2">
+              Dịch vụ thiết kế web chuyên nghiệp, tối ưu trải nghiệm người dùng.
+            </p>
+          </div>
+        </div>
+
+        <!-- Cột Dịch vụ 2 -->
+        <div class="col-md-4 text-center">
+          <div class="card p-4 h-100 shadow-sm">
+            <h3>SEO & Marketing</h3>
+            <p class="text-muted mt-2">
+              Nâng cao thương hiệu của bạn trên các công cụ tìm kiếm hiệu quả.
+            </p>
+          </div>
+        </div>
+
+        <!-- Cột Dịch vụ 3 -->
+        <div class="col-md-4 text-center">
+          <div class="card p-4 h-100 shadow-sm">
+            <h3>Hỗ trợ 24/7</h3>
+            <p class="text-muted mt-2">
+              Chúng tôi luôn sẵn sàng hỗ trợ bạn mọi lúc, mọi nơi.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Bước 2.5: Tạo Footer (Chân trang) -->
+    <footer class="bg-dark text-white text-center py-3">
+      <div class="container">
+        <p class="m-0">&copy; 2026 MyBrand. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- 6. Nhúng Bootstrap JS qua CDN (Bắt buộc để chạy tính năng thu gọn/mở rộng menu) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

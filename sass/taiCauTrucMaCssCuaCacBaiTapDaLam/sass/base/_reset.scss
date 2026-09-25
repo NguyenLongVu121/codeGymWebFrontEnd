@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font-main;
+  color: $dark-color;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: $container-width;
+  margin: 0 auto;
+  padding: 0 15px;
+}

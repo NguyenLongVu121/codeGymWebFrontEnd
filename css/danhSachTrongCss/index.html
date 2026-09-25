@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Thực hành Danh sách trong CSS</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        line-height: 1.6;
+      }
+
+      /* 1. Các kiểu đánh dấu mục khác nhau (list-style-type) */
+      ul.circle {
+        list-style-type: circle; /* Dấu chấm tròn rỗng */
+      }
+      ul.square {
+        list-style-type: square; /* Dấu ô vuông */
+      }
+      ol.roman {
+        list-style-type: upper-roman; /* Chữ số La Mã in hoa (I, II, III) */
+      }
+
+      /* 2. Đánh dấu mục bằng hình ảnh (list-style-image) */
+      ul.custom-bullet {
+        /* Thay đường dẫn bằng ảnh icon nhỏ bất kỳ nếu có */
+        list-style-image: url("https://w7.pngwing.com/pngs/303/379/png-transparent-check-mark-icon-green-checkmark-miscellaneous-angle-text.png");
+      }
+
+      /* 3. Vị trí đánh dấu (list-style-position) */
+      ul.inside {
+        list-style-position: inside; /* Dấu nằm bên trong khối văn bản */
+        background-color: #f0f0f0;
+      }
+      ul.outside {
+        list-style-position: outside; /* Dấu nằm bên ngoài (mặc định) */
+        background-color: #e8e8e8;
+      }
+
+      /* 4. Thuộc tính rút gọn (list-style) */
+      ul.shorthand {
+        /* Cú pháp: list-style: [type] [position] [image] */
+        list-style: square inside;
+      }
+
+      /* 5. Kiểu danh sách kết hợp màu sắc */
+      ol.colored-list {
+        background: #ffe6e6;
+        padding: 20px;
+      }
+      ol.colored-list li {
+        background: #fff;
+        color: #d9534f;
+        margin: 5px 0;
+        padding: 8px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>1. Đánh dấu mục bằng các kiểu ký hiệu khác nhau</h2>
+    <p>Danh sách không có thứ tự (ul):</p>
+    <ul class="circle">
+      <li>Mục 1 - Circle</li>
+      <li>Mục 2 - Circle</li>
+    </ul>
+
+    <ul class="square">
+      <li>Mục 1 - Square</li>
+      <li>Mục 2 - Square</li>
+    </ul>
+
+    <p>Danh sách có thứ tự (ol):</p>
+    <ol class="roman">
+      <li>Phần thứ nhất</li>
+      <li>Phần thứ hai</li>
+    </ol>
+
+    <hr />
+
+    <h2>2. Vị trí đánh dấu các mục trong danh sách</h2>
+    <p>Vị trí bên trong (inside):</p>
+    <ul class="inside">
+      <li>Dòng thứ nhất với vị trí dấu nằm gọn bên trong lề nội dung.</li>
+      <li>Dòng thứ hai.</li>
+    </ul>
+
+    <p>Vị trí bên ngoài (outside):</p>
+    <ul class="outside">
+      <li>Dòng thứ nhất với vị trí dấu nằm nhô ra ngoài lề nội dung.</li>
+      <li>Dòng thứ hai.</li>
+    </ul>
+
+    <hr />
+
+    <h2>3. Sử dụng thuộc tính rút gọn list-style</h2>
+    <ul class="shorthand">
+      <li>Mục sử dụng cú pháp gộp (square inside)</li>
+      <li>Mục tiếp theo</li>
+    </ul>
+
+    <hr />
+
+    <h2>4. Kiểu của danh sách kết hợp màu sắc</h2>
+    <ol class="colored-list">
+      <li>Thẻ &lt;ol&gt; có màu nền hồng nhạt.</li>
+      <li>Các thẻ &lt;li&gt; con có chữ màu đỏ và nền màu trắng.</li>
+    </ol>
+  </body>
+</html>

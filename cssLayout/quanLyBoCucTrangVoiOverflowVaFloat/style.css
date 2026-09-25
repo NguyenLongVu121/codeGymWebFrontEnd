@@ -1,0 +1,37 @@
+/* Áp dụng box-sizing cho tất cả phần tử */
+* {
+  box-sizing: border-box;
+}
+
+/* Khối bao bọc 2 cột float */
+.container {
+  width: 100%;
+  overflow: hidden; /* Cần thiết để tự động tính lại chiều cao khi các phần tử con dùng float */
+  margin-bottom: 20px;
+}
+
+/* Cột trái: Chiếm 50% chiều rộng */
+.left-column {
+  width: 50%;
+  float: left;
+  background-color: lightgray;
+  padding: 20px;
+}
+
+/* Cột phải: Chiếm 48% chiều rộng */
+.right-column {
+  width: 48%;
+  float: right;
+  background-color: lightgreen;
+  padding: 20px;
+}
+
+/* Khối giới hạn kích thước có thanh cuộn */
+.overflow-box {
+  width: 300px;
+  height: 100px;
+  background-color: lightcoral;
+  padding: 10px;
+  overflow: auto; /* Tạo thanh cuộn khi nội dung văn bản bị tràn */
+  font-family: Arial, sans-serif;
+}

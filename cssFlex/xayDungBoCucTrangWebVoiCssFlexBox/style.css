@@ -1,0 +1,60 @@
+/* 1. Reset CSS cơ bản */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* 2. Cấu hình khung chứa tổng (container) */
+.container {
+  display: flex;
+  flex-direction: column; /* Các thành phần Header, Nav, Main, Footer xếp dọc */
+  height: 100vh; /* Phủ kín toàn bộ chiều cao màn hình */
+}
+
+/* 3. Định dạng Header và Footer */
+.header,
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* 4. Định dạng Navigation */
+.nav {
+  background-color: #444;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* 5. Cấu hình Flexbox cho khu vực chính (main-container) trên Desktop */
+.main-container {
+  display: flex; /* Đặt Flexbox để Content và Sidebar nằm ngang hàng */
+  flex: 1; /* Tự động phình to để lấp đầy khoảng trống dọc giữa Nav và Footer */
+}
+
+/* Nội dung chính chiếm 3 phần không gian */
+.content {
+  flex: 3;
+  padding: 20px;
+}
+
+/* Thanh bên Sidebar chiếm 1 phần không gian */
+.sidebar {
+  flex: 1;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+/* 6. Bước 3: Responsive cho thiết bị di động (Media Queries) */
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column; /* Khi màn hình <= 768px, Sidebar sẽ tự động rớt xuống dưới Content */
+  }
+}

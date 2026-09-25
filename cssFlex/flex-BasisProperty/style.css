@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+h2 {
+  margin: 20px 0 10px 0;
+  font-size: 18px;
+}
+
+/* Khung chứa Flex Container */
+.flex-container {
+  display: flex;
+  background-color: #2196f3;
+  padding: 10px;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+/* Định dạng chung cho các ô con Flex Item */
+.item {
+  background-color: #ffffff;
+  border: 1px solid #333;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* VÍ DỤ 1: Thiết lập kích thước ban đầu bằng chiều dài cụ thể (number/length) */
+.item-100 {
+  flex-basis: 100px; /* Chiều rộng ban đầu là 100px */
+}
+
+.item-200 {
+  flex-basis: 200px; /* Chiều rộng ban đầu là 200px */
+}
+
+.item-50percent {
+  flex-basis: 50%; /* Chiếm 50% chiều rộng của Container cha */
+}
+
+/* VÍ DỤ 2: Các giá trị từ khóa */
+.item-auto {
+  flex-basis: auto; /* Giá trị mặc định, tự động tính theo kích thước width hoặc nội dung bên trong */
+}
+
+.item-zero {
+  flex-basis: 0; /* Co kích thước ban đầu về 0px trước khi tính toán co giãn */
+}

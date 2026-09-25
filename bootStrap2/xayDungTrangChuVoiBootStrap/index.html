@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang Chủ với Bootstrap</title>
+
+    <!-- Bước 1: Cài đặt Bootstrap 5 CSS via CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+
+    <!-- Bước 2: Nhúng thư viện Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Bước 2: Tạo Navbar với Font Awesome Icons -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><i class="fas fa-home me-2"></i>MyWebsite</a
+        >
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+          aria-controls="navMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#"
+                ><i class="fas fa-house me-1"></i>Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><i class="fas fa-info-circle me-1"></i>About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><i class="fas fa-concierge-bell me-1"></i>Services</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><i class="fas fa-envelope me-1"></i>Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Bước 3: Tạo Hero Section với Carousel (Slideshow hình ảnh) -->
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://picsum.photos/1200/400?random=1"
+            class="d-block w-100"
+            alt="Slide 1"
+            style="height: 400px; object-fit: cover"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Chào mừng đến với Website</h5>
+            <p>Khám phá các dịch vụ và sản phẩm tuyệt vời của chúng tôi.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://picsum.photos/1200/400?random=2"
+            class="d-block w-100"
+            alt="Slide 2"
+            style="height: 400px; object-fit: cover"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Giải pháp công nghệ hiện đại</h5>
+            <p>Tối ưu hóa trải nghiệm người dùng trên mọi thiết bị.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Nút điều khiển Slide -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#heroCarousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#heroCarousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Bước 4: Thêm Section với Flexbox căn giữa nội dung -->
+    <section
+      class="d-flex justify-content-center align-items-center bg-light py-5 my-4 text-center"
+    >
+      <div class="container">
+        <h2 class="fw-bold text-primary">
+          Chào mừng đến với trang web của chúng tôi!
+        </h2>
+        <p class="lead text-muted mb-0">
+          Chúng tôi cung cấp các giải pháp thiết kế trang chủ chuyên nghiệp và
+          responsive.
+        </p>
+      </div>
+    </section>
+
+    <!-- Bước 5: Tạo Contact Form với Bootstrap Form -->
+    <section class="container my-5">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8 col-lg-6">
+          <div class="card shadow-sm p-4">
+            <h3 class="text-center mb-4">
+              <i class="fas fa-paper-plane text-primary me-2"></i>Liên Hệ Với
+              Chúng Tôi
+            </h3>
+
+            <form class="mt-2">
+              <div class="mb-3">
+                <label for="name" class="form-label fw-semibold"
+                  >Tên của bạn</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Nhập tên của bạn..."
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label fw-semibold">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Nhập địa chỉ email..."
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label fw-semibold"
+                  >Nội dung tin nhắn</label
+                >
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="4"
+                  placeholder="Nhập tin nhắn..."
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary w-100 fw-bold">
+                Gửi Tin Nhắn
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+      <div class="container">
+        <p class="mb-0">&copy; 2026 MyWebsite. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Nhúng Bootstrap 5 JS Bundle via CDN (Bắt buộc để Carousel & Navbar Toggle hoạt động) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

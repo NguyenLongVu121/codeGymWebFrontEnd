@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thực hành CSS flex-basis Property</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>
+      Ví dụ 1: Đặt kích thước ban đầu bằng đơn vị độ dài cụ thể (`px`, `%`)
+    </h2>
+    <div class="flex-container">
+      <div class="item item-100">flex-basis: 100px</div>
+      <div class="item item-200">flex-basis: 200px</div>
+      <div class="item item-50percent">flex-basis: 50%</div>
+    </div>
+
+    <h2>Ví dụ 2: So sánh `flex-basis: auto` và `flex-basis: 0`</h2>
+    <div class="flex-container">
+      <div class="item item-auto">flex-basis: auto (Tùy theo nội dung)</div>
+      <div class="item item-zero">flex-basis: 0</div>
+    </div>
+  </body>
+</html>

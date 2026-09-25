@@ -1,0 +1,25 @@
+.header {
+  background-color: $white-color;
+  border-bottom: 1px solid #eee;
+  padding: 15px 0;
+
+  .container {
+    @include flex-center(space-between, center);
+  }
+
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: $primary-color;
+  }
+
+  .nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: $dark-color;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}

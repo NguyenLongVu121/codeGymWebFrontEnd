@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+h2 {
+  margin: 20px 0 10px 0;
+}
+
+/* Khung bọc chung cho Grid Container */
+.grid-container {
+  display: grid;
+  gap: 10px; /* Khoảng cách giữa các ô */
+  background-color: #2196f3;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+/* Định dạng các ô con bên trong (Grid Item) */
+.item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 18px;
+  text-align: center;
+}
+
+/* VÍ DỤ 1: Chia 3 cột với kích thước px và auto */
+.grid-1 {
+  grid-template-columns: 80px auto 150px;
+  /* Cột 1: rộng 80px
+       Cột 2: tự động co giãn (auto)
+       Cột 3: rộng 150px */
+}
+
+/* VÍ DỤ 2: Chia 3 cột đều nhau dùng đơn vị tỉ lệ fr (1fr 1fr 1fr) */
+.grid-2 {
+  grid-template-columns: repeat(3, 1fr);
+  /* Viết gọn của: 1fr 1fr 1fr (mỗi cột chiếm 1 phần bằng nhau) */
+}

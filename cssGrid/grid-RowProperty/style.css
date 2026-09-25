@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+h2 {
+  margin: 20px 0 10px 0;
+  font-size: 18px;
+}
+
+/* Khung lưới chia làm 3 cột */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(80px, auto); /* Chiều cao tối thiểu mỗi hàng là 80px */
+  gap: 10px;
+  background-color: #2196f3;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+/* Định dạng các ô con (Grid Items) */
+.item {
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid #333;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* VÍ DỤ 1: Khai báo chính xác đường kẻ hàng bắt đầu và đường kẻ kết thúc */
+.item-row-1-3 {
+  grid-row: 1 / 3;
+  /* Viết tắt của: 
+       grid-row-start: 1; 
+       grid-row-end: 3; 
+       (Ô này sẽ bắt đầu từ đường kẻ hàng 1 và kéo dài đến đường kẻ hàng 3, tương đương 2 hàng) */
+  background-color: #ffeb3b;
+}
+
+/* VÍ DỤ 2: Khai báo đường kẻ bắt đầu và dùng 'span n' để kéo dài n hàng */
+.item-span-2 {
+  grid-row: 1 / span 2;
+  /* Ô này bắt đầu từ hàng 1 và trải dài đúng 2 hàng theo chiều dọc */
+  background-color: #4caf50;
+  color: white;
+}

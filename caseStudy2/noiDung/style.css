@@ -1,0 +1,19 @@
+/* Tùy chỉnh Hero Banner */
+.hero-section {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://via.placeholder.com/1200x500") center/cover no-repeat;
+  height: 400px;
+}
+
+/* Hiệu ứng hover cho thẻ Card */
+.card {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important;
+}

@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+h2 {
+  margin: 20px 0 10px 0;
+  font-size: 18px;
+}
+
+/* Khung lưới chung chia thành 3 cột */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #2196f3;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+/* Định dạng các ô con (Grid Items) */
+.item {
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid #333;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* VÍ DỤ 1: Đặt khoảng cách giữa các HÀNG cố định bằng px */
+.grid-px {
+  grid-row-gap: 30px; /* Hoặc dùng cú pháp mới: row-gap: 30px; */
+}
+
+/* VÍ DỤ 2: Đặt khoảng cách giữa các HÀNG theo phần trăm (%) */
+.grid-percent {
+  grid-row-gap: 5%; /* Khoảng cách hàng chiếm 5% chiều rộng/chiều cao khung */
+}

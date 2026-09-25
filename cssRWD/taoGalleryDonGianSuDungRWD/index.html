@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Image Gallery</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>Responsive Image Gallery</h2>
+    <p>Resize the browser window to see the effect.</p>
+
+    <!-- Khung chứa bộ sưu tập ảnh -->
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="https://picsum.photos/id/1018/1000/600">
+          <img src="https://picsum.photos/id/1018/600/400" alt="Cinque Terre" />
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="https://picsum.photos/id/1015/1000/600">
+          <img src="https://picsum.photos/id/1015/600/400" alt="Forest" />
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="https://picsum.photos/id/1019/1000/600">
+          <img
+            src="https://picsum.photos/id/1019/600/400"
+            alt="Northern Lights"
+          />
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="https://picsum.photos/id/1029/1000/600">
+          <img src="https://picsum.photos/id/1029/600/400" alt="Mountains" />
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <div style="padding: 6px">
+      <p>
+        This example use media queries to re-arrange the images on different
+        screen sizes: for screens larger than 700px wide, it will show four
+        images side by side, for screens smaller than 700px, it will show two
+        images side by side. For screens smaller than 500px, the images will
+        stack vertically (100%).
+      </p>
+    </div>
+  </body>
+</html>

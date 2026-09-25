@@ -1,0 +1,86 @@
+/* Reset CSS cơ bản */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 15px 20px;
+  color: white;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+}
+
+.nav ul li {
+  margin: 0 15px;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background-color: #f4f4f4;
+}
+
+/* Services Section */
+.services {
+  text-align: center;
+  padding: 50px;
+}
+
+.service-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.service {
+  background-color: lightblue;
+  padding: 20px;
+  margin: 10px;
+}
+
+/* Testimonials Section */
+.testimonials {
+  text-align: center;
+  padding: 50px;
+  background-color: #ddd;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}
+
+/* Responsive cho Mobile (Màn hình dưới 768px) */
+@media (max-width: 768px) {
+  /* Ẩn danh sách menu ngang trên mobile */
+  .nav ul {
+    display: none;
+  }
+
+  /* Chuyển các khối dịch vụ từ nằm ngang sang sắp xếp theo cột dọc */
+  .service-container {
+    flex-direction: column;
+  }
+}

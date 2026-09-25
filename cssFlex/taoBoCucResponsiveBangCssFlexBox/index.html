@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bố cục Responsive bằng CSS Flexbox</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- 1. Header -->
+      <header class="header">
+        <h1>Header - Tiêu đề trang</h1>
+      </header>
+
+      <!-- 2. Navigation -->
+      <nav class="nav">
+        <a href="#">Trang chủ</a>
+        <a href="#">Tin tức</a>
+        <a href="#">Sản phẩm</a>
+        <a href="#">Liên hệ</a>
+      </nav>
+
+      <!-- Khung thân chứa Main Content & Sidebar -->
+      <div class="main-wrapper">
+        <!-- 3. Main Content -->
+        <main class="content">
+          <h2>Main Content</h2>
+          <p>
+            Đây là khu vực hiển thị nội dung chính của trang web. Sử dụng
+            Flexbox giúp khung này tự động mở rộng linh hoạt.
+          </p>
+        </main>
+
+        <!-- 4. Sidebar -->
+        <aside class="sidebar">
+          <h3>Sidebar</h3>
+          <p>
+            Nội dung phụ (quảng cáo, tin tức nổi bật, liên kết nhanh, v.v.).
+          </p>
+        </aside>
+      </div>
+
+      <!-- 5. Footer -->
+      <footer class="footer">
+        <p>Footer - Thông tin cuối trang &copy; 2026</p>
+      </footer>
+    </div>
+  </body>
+</html>

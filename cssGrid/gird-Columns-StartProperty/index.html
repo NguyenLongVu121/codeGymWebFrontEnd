@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thực hành CSS grid-column-start</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>
+      1. Dùng `grid-column-start: column-line` (Bắt đầu từ đường kẻ cột cụ thể)
+    </h2>
+    <div class="grid-container">
+      <div class="item item-start-2">Item 1 (Bắt đầu ở đường cột 2)</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+      <div class="item">Item 4</div>
+    </div>
+
+    <h2>2. Dùng `grid-column-start: span n` (Kéo dài ô qua n cột)</h2>
+    <div class="grid-container">
+      <div class="item item-span-2">Item 1 (Trải rộng 2 cột)</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+      <div class="item">Item 4</div>
+    </div>
+  </body>
+</html>

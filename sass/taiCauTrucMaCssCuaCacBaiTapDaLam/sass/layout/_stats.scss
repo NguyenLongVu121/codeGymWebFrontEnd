@@ -1,0 +1,17 @@
+.stats {
+  padding: 40px 0;
+  background-color: $primary-color;
+  color: $white-color;
+
+  .container {
+    @include flex-center(space-around, center);
+  }
+
+  .stat-item {
+    text-align: center;
+
+    h3 {
+      font-size: 32px;
+    }
+  }
+}

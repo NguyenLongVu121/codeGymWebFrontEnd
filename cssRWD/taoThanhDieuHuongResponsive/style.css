@@ -1,0 +1,77 @@
+/* Resteting CSS cơ bản */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Giao diện thanh điều hướng chính */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 15px 20px;
+  color: white;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Danh sách menu dàn hàng ngang mặc định trên Desktop */
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+/* Biểu tượng 3 gạch (hamburger) ẩn trên màn hình lớn */
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Responsive cho thiết bị di động (Màn hình từ 768px trở xuống) */
+@media (max-width: 768px) {
+  /* Ẩn danh sách menu mặc định */
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #333;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links li {
+    padding: 10px;
+  }
+
+  /* Hiển thị biểu tượng nút menu 3 gạch */
+  .menu-icon {
+    display: block;
+  }
+
+  /* Hiển thị lại menu dạng dọc khi class 'active' được thêm bằng JS */
+  .nav-links.active {
+    display: flex;
+  }
+}
