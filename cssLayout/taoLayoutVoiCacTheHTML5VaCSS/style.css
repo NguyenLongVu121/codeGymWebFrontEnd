@@ -1,0 +1,91 @@
+/* Đặt lại thuộc tính mặc định */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+}
+
+/* Thẻ khung bao ngoài */
+#container {
+  width: 1000px;
+  margin: 20px auto;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+}
+
+/* 1. Header */
+header {
+  background-color: #1e88e5;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+/* 2. Nav */
+nav {
+  background-color: #1565c0;
+  padding: 12px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* 3. Aside bên trái */
+.left-sidebar {
+  width: 200px;
+  min-height: 380px;
+  float: left;
+  background-color: #e3f2fd;
+  padding: 15px;
+}
+
+/* 4. Section nội dung ở giữa */
+.main-content {
+  width: 580px;
+  min-height: 380px;
+  float: left;
+  padding: 15px;
+  background-color: #ffffff;
+}
+
+article {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed #ccc;
+}
+
+/* 5. Aside bên phải */
+.right-sidebar {
+  width: 220px;
+  min-height: 380px;
+  float: left;
+  background-color: #e3f2fd;
+  padding: 15px;
+}
+
+/* Xóa hiệu ứng float */
+.clear {
+  clear: both;
+}
+
+/* 6. Footer */
+footer {
+  background-color: #0d47a1;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}

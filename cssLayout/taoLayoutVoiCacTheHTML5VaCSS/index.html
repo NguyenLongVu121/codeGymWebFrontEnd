@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout với thẻ HTML5</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <!-- 1. Header: Đầu trang (Logo/Banner) -->
+      <header>
+        <h1>LOGO & BANNER TRANG WEB</h1>
+      </header>
+
+      <!-- 2. Nav: Thanh điều hướng (Menu) -->
+      <nav>
+        <a href="#">Trang chủ</a>
+        <a href="#">Khóa học</a>
+        <a href="#">Học viên</a>
+        <a href="#">Liên hệ</a>
+      </nav>
+
+      <!-- 3. Aside: Cột thông tin phụ bên trái -->
+      <aside class="left-sidebar">
+        <h3>Danh mục</h3>
+        <ul>
+          <li>HTML5 / CSS3</li>
+          <li>JavaScript</li>
+          <li>ReactJS</li>
+        </ul>
+      </aside>
+
+      <!-- 4. Section & Article: Khu vực nội dung chính ở giữa -->
+      <section class="main-content">
+        <article>
+          <h2>Bài viết 1: Giới thiệu Semantic HTML5</h2>
+          <p>
+            Thẻ ngữ nghĩa giúp trình duyệt và công cụ tìm kiếm (SEO) hiểu rõ cấu
+            trúc trang web hơn.
+          </p>
+        </article>
+        <article>
+          <h2>Bài viết 2: Kỹ thuật dàn trang CSS</h2>
+          <p>
+            Sử dụng thuộc tính float kết hợp với các thẻ HTML5 để phân vùng giao
+            diện rõ ràng.
+          </p>
+        </article>
+      </section>
+
+      <!-- 5. Aside: Cột thông tin phụ bên phải -->
+      <aside class="right-sidebar">
+        <h3>Thông báo</h3>
+        <p>Lịch khai giảng khóa học mới vào tuần sau.</p>
+      </aside>
+
+      <!-- Clear float để tránh đè giao diện -->
+      <div class="clear"></div>
+
+      <!-- 6. Footer: Chân trang -->
+      <footer>
+        <p>&copy; 2026 CodeGym - Bài tập HTML5 Layout</p>
+      </footer>
+    </div>
+  </body>
+</html>

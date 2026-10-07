@@ -1,19 +1,87 @@
-/* Tùy chỉnh Hero Banner */
-.hero-section {
-  background:
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("https://via.placeholder.com/1200x500") center/cover no-repeat;
-  height: 400px;
+/* Tùy chỉnh màu sắc & hiệu ứng Gradient giống ảnh */
+:root {
+  --primary-gradient: linear-gradient(135deg, #e91e63 0%, #ff5722 100%);
+  --coral-color: #ff5722;
 }
 
-/* Hiệu ứng hover cho thẻ Card */
-.card {
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
+body {
+  font-family:
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    sans-serif;
+  scroll-behavior: smooth;
 }
 
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important;
+/* Color Helper */
+.text-coral {
+  color: var(--coral-color) !important;
+}
+
+.btn-coral {
+  background: var(--primary-gradient);
+  border: none;
+}
+
+/* Custom Navbar */
+.custom-nav {
+  background-color: #212529;
+}
+
+/* Gradient Hero & Download Sections */
+.hero-section,
+.download-section {
+  background: var(--primary-gradient);
+}
+
+.hero-title {
+  font-size: calc(1.8rem + 1.5vw);
+  letter-spacing: 1px;
+}
+
+/* Card Price Circle */
+.price-circle {
+  width: 220px;
+  height: 180px;
+  border-radius: 50% / 40% !important;
+}
+
+/* Fact Background Section */
+.fact-section {
+  background: url("https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1500&q=80")
+    center/cover no-repeat;
+  position: relative;
+}
+
+.fact-bg-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* Testimonial Avatar */
+.avatar-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 35% !important;
+}
+
+/* Footer Input Styling */
+.footer-section .form-control::placeholder {
+  color: #a0a0a0;
+}
+
+.footer-section .form-control:focus {
+  box-shadow: none;
+  background-color: #495057;
+}
+
+/* Responsiveness helpers */
+.min-vh-50 {
+  min-height: 50vh;
 }

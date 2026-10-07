@@ -1,0 +1,78 @@
+/* 1. Cấu hình chung cho toàn trang */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* Thẻ bao toàn bộ trang web, căn giữa màn hình */
+#main {
+  width: 1000px;
+  margin: 20px auto;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+}
+
+/* 2. Phần Header / Banner */
+#head {
+  height: 100px;
+  background-color: #3498db;
+  color: white;
+  text-align: center;
+  line-height: 100px;
+  margin-bottom: 10px;
+}
+
+/* 3. Phần Menu Điều Hướng */
+#head-link {
+  background-color: #2c3e50;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+#head-link a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+/* 4. Cột bên trái */
+#left {
+  width: 200px;
+  height: 400px;
+  float: left;
+  background-color: #e8e8e8;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* 5. Cột nội dung chính ở giữa */
+#content {
+  width: 580px;
+  height: 400px;
+  float: left;
+  background-color: #ffffff;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* 6. Cột bên phải */
+#right {
+  width: 220px;
+  height: 400px;
+  float: left;
+  background-color: #e8e8e8;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* 7. Chân trang (Footer) */
+#footer {
+  background-color: #34495e;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 10px;
+}

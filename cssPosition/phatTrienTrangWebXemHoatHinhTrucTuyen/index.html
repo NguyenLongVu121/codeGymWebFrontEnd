@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Xem Phim Hoạt Hình</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header cố định -->
+    <header class="main-header">
+      <div class="logo">
+        <h2>🎬 Hoạt Hình Trẻ Em</h2>
+      </div>
+      <nav class="head-link">
+        <ul>
+          <li><a href="#">Trang chủ</a></li>
+          <li><a href="#">Mới cập nhật</a></li>
+          <li><a href="#">Xem nhiều nhất</a></li>
+          <li><a href="#">Thể loại</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Khung chứa nội dung chính -->
+    <div class="container">
+      <!-- Left Content: Danh sách video -->
+      <aside class="left-content">
+        <h3>Danh Sách Phim</h3>
+        <ul class="video-list">
+          <li class="active">
+            <a href="#">Episode 1: Cuộc phiêu lưu bắt đầu</a>
+          </li>
+          <li><a href="#">Episode 2: Hòn đảo bí ẩn</a></li>
+          <li><a href="#">Episode 3: Sức mạnh tình bạn</a></li>
+          <li><a href="#">Episode 4: Bí mật dưới lòng đất</a></li>
+          <li><a href="#">Episode 5: Trận chiến cuối cùng</a></li>
+        </ul>
+      </aside>
+
+      <!-- Right Content: Màn hình phát video -->
+      <main class="right-content">
+        <h2>Đang phát: Episode 1 - Cuộc phiêu lưu bắt đầu</h2>
+
+        <!-- Nhúng video bằng thẻ iframe (YouTube) -->
+        <div class="video-wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+            title="YouTube video player"
+            frameborder="0"
+            allow="
+              accelerometer;
+              autoplay;
+              clipboard-write;
+              encrypted-media;
+              gyroscope;
+              picture-in-picture;
+            "
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+
+        <!-- Hoặc sử dụng thẻ <video> trực tiếp nếu có file local/mp4 online: -->
+        <!--
+            <video controls width="100%">
+                <source src="sample-video.mp4" type="video/mp4">
+                Trình duyệt của bạn không hỗ trợ thẻ video.
+            </video>
+            -->
+
+        <div class="video-info">
+          <h3>Mô tả phim</h3>
+          <p>
+            Bộ phim hoạt hình dành cho trẻ em với nội dung vui nhộn, giáo dục bổ
+            ích và thuyết minh tiếng Việt chuẩn HD.
+          </p>
+        </div>
+      </main>
+    </div>
+
+    <!-- Footer bản quyền -->
+    <footer class="main-footer">
+      <p>
+        &copy; 2026 Website Xem Phim Hoạt Hình Trực Tuyến - Bảo lưu mọi quyền.
+      </p>
+    </footer>
+  </body>
+</html>

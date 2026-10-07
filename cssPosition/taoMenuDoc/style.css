@@ -1,0 +1,51 @@
+/* Reset định dạng mặc định cho danh sách */
+#menu ul,
+#menu li {
+  margin: 0;
+  padding: 0;
+  list-style: none; /* Bỏ các dấu chấm đầu dòng */
+}
+
+/* Định dạng các phần tử danh sách cấp 1 */
+#menu > ul > li {
+  position: relative; /* Cho phép menu con căn vị trí dựa theo li này */
+  width: 160px;
+  height: 30px;
+  line-height: 30px;
+  background-color: black;
+  cursor: pointer;
+}
+
+/* Định dạng thẻ <a> bên trong menu */
+#menu a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 0 20px;
+}
+
+/* Hiệu ứng đổi màu nền khi di chuột qua item */
+#menu li:hover {
+  background-color: #444;
+}
+
+/* Cấu hình menu con (Dropdown) */
+#menu .sub-menu {
+  position: absolute;
+  top: 0;
+  left: 160px; /* Đặt menu con nằm ngay bên phải của menu cha */
+  visibility: hidden; /* Mặc định ẩn menu con */
+}
+
+/* Định dạng cho phần tử trong menu con */
+#menu .sub-menu li {
+  width: 160px;
+  height: 30px;
+  line-height: 30px;
+  background-color: black;
+}
+
+/* Hiển thị menu con khi di chuột vào phần tử cha */
+#menu li:hover > .sub-menu {
+  visibility: visible;
+}

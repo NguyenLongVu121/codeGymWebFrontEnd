@@ -1,0 +1,62 @@
+/* Reset font chữ và margin cho trang */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Reset định dạng cho danh sách */
+#menu ul,
+#menu li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Khung chứa menu chính */
+#menu > ul {
+  background-color: #333;
+  height: 40px;
+}
+
+/* Các mục menu chính xếp hàng ngang */
+#menu > ul > li {
+  float: left;
+  position: relative; /* Làm gốc tọa độ cho menu con thả xuống */
+}
+
+/* Định dạng liên kết thẻ <a> trong menu */
+#menu a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  line-height: 40px;
+  padding: 0 20px;
+}
+
+/* Hiệu ứng di chuột đổi màu nền */
+#menu li:hover > a {
+  background-color: #555;
+}
+
+/* Cấu hình menu con (Dropdown) thả xuống dưới */
+#menu .sub-menu {
+  position: absolute;
+  top: 40px; /* Thả xuống ngay bên dưới thanh menu chính */
+  left: 0;
+  background-color: #444;
+  width: 180px;
+  visibility: hidden; /* Ẩn menu con mặc định */
+  z-index: 100;
+}
+
+/* Cấu hình từng mục trong menu con xếp dọc */
+#menu .sub-menu li {
+  float: none;
+  border-bottom: 1px solid #555;
+}
+
+/* Hiển thị menu con khi di chuột vào mục cha */
+#menu li:hover > .sub-menu {
+  visibility: visible;
+}
